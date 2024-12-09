@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player By Mukesh Nath</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Resources/music-player.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav class="icons">
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="Resources/468-thumbnail.png" class="song-img">
+            <div class="song-info">
+                <h1>Losing My Mind</h1>
+                <p>Neffex - Dorothy Collins</p>
+    
+        </div>
+
+        <audio id="song">
+            <source src="Resources/Losing My Mind - NEFFEX.mp3" type="audio/mp3">
+        </audio >
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div>
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div>
+                <i onclick="playPause()" class="fa-solid fa-play" id="ctrlIcon"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/29dd287419.js" crossorigin="anonymous"></script>
+</body>
+</html>
